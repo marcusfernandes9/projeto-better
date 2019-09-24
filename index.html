@@ -5,18 +5,40 @@
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/better-tema.css" />
+
     <title>Better - Fotos de graça e pagas</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <a href="#" class="navbar-brand">Better</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li><a href="#" class="nav-link">Better</a></li>
-            <li><a href="#" class="nav-link">Descubra</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Descubra
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Paisagem</a></li>
+                <li><a href="#" class="dropdown-item">Tecnologia</a></li>
+                <li><a href="#" class="dropdown-item">Abstrato</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a href="#" class="dropdown-item">Animais</a></li>
+                <li><a href="#" class="dropdown-item">Comida</a></li>
+                <li><a href="#" class="dropdown-item">Pessoas</a></li>
+              </ul>
+            </li>
             <li><a href="#" class="nav-link">Preços</a></li>
             <li><a href="#" class="nav-link">Cadastre-se</a></li>
             <li><a href="#" class="nav-link">Login</a></li>
@@ -26,7 +48,17 @@
       </div>
       <!-- fim .container -->
     </nav>
-    <script src="js/jquery.js" ></script>
-    <script src="js/bootstrap.js" ></script>
+    <main class="jumbotron">
+      <div class="container">
+        <h1>Fotos perfeitas</h1>
+        <p>Lorem ipsum dolor</p>
+        <form>
+          <input type="search" />
+          <button>Pesquisar</button>
+        </form>
+      </div>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
